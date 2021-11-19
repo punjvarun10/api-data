@@ -1,0 +1,17 @@
+<p>customer-list works!</p>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4 my-3" *ngFor="let result of results">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{result.image}}" width="600" height="900" alt="Card image cap"> 
+        <div class="card-body">
+          <h5 class="card-title">{{result.title}}</h5>
+          <p class="card-text">{{result.description | slice:0:150}}...</p>
+          <a href="#" class="btn btn-primary" title="{{result.producer}}">{{result.producer | slice:0:10}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
